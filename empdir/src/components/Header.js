@@ -1,5 +1,6 @@
 import React from "react";
 import logo from '../Logo.png';
+import Search from "./Search";
 
 function Header(props) {
   return (
@@ -9,6 +10,7 @@ function Header(props) {
         <p>
           Jack ERP Employee Directory
         </p>
+        <Search search={props.search} setSearch={props.setSearch} />
       </header>
     </div>
   );

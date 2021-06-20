@@ -4,6 +4,7 @@ import Footer from "./components/Footer"
 import API from "./utils/API";
 import Header from './components/Header';
 import TableHeader from './components/TableHeader';
+import React, { useState } from 'react';
 
 // let employee = "{ name.first: Gunther}";
 // employee = query => {
@@ -13,11 +14,12 @@ import TableHeader from './components/TableHeader';
 // }  
 
 function App() {
+  const [search, setSearch] = useState([]);
   return (
     <div className="App">
-      <Header />
+      <Header search = {search} setSearch = {setSearch} />
       <TableHeader />
-      <EmpData />
+      {/* <EmpData /> */}
       <Footer type="danger" color="red"/>
     </div>
   );

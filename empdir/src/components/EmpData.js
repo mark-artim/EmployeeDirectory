@@ -16,7 +16,7 @@ async function fetchData() {
 
 useEffect(() => {
     fetchData();
-    console.log('EmpData FetchData employee = ',employee)
+    // console.log('EmpData FetchData employee = ',employee)
 },[]);
 
 return (
