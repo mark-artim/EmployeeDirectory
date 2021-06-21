@@ -2,8 +2,9 @@ import React from "react";
 import Row from "./Row";
 
 function TableHeader(props) {
-    // console.log('props:', props)
+    console.log('props in TableHeader: ', props);
     return (
+        <div>
         <table className="table">
             <thead>
                 <tr>
@@ -17,9 +18,10 @@ function TableHeader(props) {
                 </tr>
             </thead>
             <tbody>
-                <Row />
+                <Row search={props.search}/>
             </tbody>    
         </table>
+        </div>
     );
 }
 

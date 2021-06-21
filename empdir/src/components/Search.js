@@ -1,5 +1,6 @@
 import React from "react";
 import Row from "./Row";
+import TableHeader from "./TableHeader";
 
 // handleInputChange = event => {
 //     // Getting the value and name of the input which triggered the change
@@ -22,8 +23,11 @@ return (
             value={search}
             name="searchName"
             // onChange={e => console.log(e.target.value)}
-            onChange={e => setSearch(e.target.value)}
-            // onChange={e => Row.searchEmployees(e.target.value)}
+            // onChange={e => setSearch(e.target.value)}
+            onChange={(e) => {
+              setSearch(e.target.value);
+              console.log(e.target.value);
+            }}
             type="search"
             placeholder="Search Name"
             className="form-control me-2"
@@ -31,6 +35,7 @@ return (
           />
           {/* <button className="btn btn-outline-success" type="submit">Submit</button> */}
           <br></br>
+          {/* <TableHeader search={search} /> */}
         </form>
     );
   }

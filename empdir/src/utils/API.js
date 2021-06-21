@@ -5,7 +5,7 @@ export default {
     getEmployees: function() {
         return new Promise((resolve, reject) => {
             axios
-            .get("https://randomuser.me/api/?results=10&inc=name,picture,email,cell,location")
+            .get("https://randomuser.me/api/?results=50&inc=name,picture,email,cell,location")
             .then(res => {
                 const employees = res.data;
                 const results = res.data;

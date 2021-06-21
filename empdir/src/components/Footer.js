@@ -3,8 +3,7 @@ import React from "react";
 function Footer(props) {
   return (
     <div className="App-footer">
-      <h3>Hey! I'm the Footer!</h3>
-      <h4>So long!  {props.color}</h4>
+      <h4>Thank you for visiting Jack ERP</h4>
     </div>
   );
 }

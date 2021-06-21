@@ -18,9 +18,9 @@ function App() {
   return (
     <div className="App">
       <Header search = {search} setSearch = {setSearch} />
-      <TableHeader />
+      <TableHeader search = {search} setSearch = {setSearch} />
       {/* <EmpData /> */}
-      <Footer type="danger" color="red"/>
+      <Footer />
     </div>
   );
 }
