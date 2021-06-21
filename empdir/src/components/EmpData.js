@@ -1,6 +1,4 @@
 import React, {useState, useEffect } from "react";
-import ReactDOM from "react-dom";
-import API from "../utils/API";
 
 const Employee = () => {
     const [hasError, setErrors] = useState(false);

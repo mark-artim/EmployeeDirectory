@@ -1,20 +1,4 @@
 import React from "react";
-import Row from "./Row";
-import TableHeader from "./TableHeader";
-
-// handleInputChange = event => {
-//     // Getting the value and name of the input which triggered the change
-//     const { name, value } = event.target;
-
-//     // Updating the input's state
-//     this.setState({
-//       [name]: value
-//     });
-//   };
-
-function fuckOff(e) {
-    console.log('Go fuck yourself: ',e.target.value)
-}
 
 function Search({search, setSearch}) {
 return (
@@ -26,7 +10,7 @@ return (
             // onChange={e => setSearch(e.target.value)}
             onChange={(e) => {
               setSearch(e.target.value);
-              console.log(e.target.value);
+              // console.log(e.target.value);
             }}
             type="search"
             placeholder="Search Name"

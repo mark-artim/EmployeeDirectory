@@ -1,7 +1,5 @@
 import './App.css';
-import EmpData from "./components/EmpData";
 import Footer from "./components/Footer"
-import API from "./utils/API";
 import Header from './components/Header';
 import TableHeader from './components/TableHeader';
 import React, { useState } from 'react';
